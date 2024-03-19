@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 182, 194);
+}
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 6px;
+}
+i {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform ease 0.3s;
+}
